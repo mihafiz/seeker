@@ -1,4 +1,4 @@
-This is a for from thewhiteh4t/seeker . An attempt to improve some of the functions.
+This is a fork from thewhiteh4t/seeker . An attempt to improve some of the functions.
 
 <p align="center">
 <img src="https://img.shields.io/badge/Python-3-brightgreen.svg?style=plastic">
