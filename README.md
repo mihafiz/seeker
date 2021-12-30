@@ -5,34 +5,19 @@ This is a fork from thewhiteh4t/seeker . An attempt to improve some of the funct
 <img src="https://img.shields.io/badge/Docker-✔-blue.svg?style=plastic">
 </p>
 
-<p align="center">
-  <a href="https://twitter.com/thewhiteh4t"><b>Twitter</b></a>
-  <span> - </span>
-  <a href="https://t.me/thewhiteh4t"><b>Telegram</b></a>
-  <span> - </span>
-  <a href="https://thewhiteh4t.github.io"><b>thewhiteh4t's Blog</b></a>
-</p>
-
-<p align="center">
-  <br>
-  <b>Available in</b>
-  <br>
-  <img src="https://i.imgur.com/1wJVDV5.png">
-</p>
-
 <p>
-  <a style="margin-right: 10px;" href="https://github.com/thewhiteh4t/seeker#installation">
+  <a style="margin-right: 10px;" href="https://github.com/mihafiz/seeker#installation">
     <img src="https://dabuttonfactory.com/button.png?t=INSTALL&f=Open+Sans&ts=15&tc=000&hp=25&vp=10&c=5&bgt=unicolored&bgc=00e2ff">
   </a>
-  <a style="margin-right: 10px;" href="https://github.com/thewhiteh4t/seeker#usage">
+  <a style="margin-right: 10px;" href="https://github.com/mihafiz/seeker#usage">
     <img src="https://dabuttonfactory.com/button.png?t=USAGE&f=Open+Sans&ts=15&tc=000&hp=25&vp=10&c=5&bgt=unicolored&bgc=00e2ff">
   </a>
-  <a href="https://github.com/thewhiteh4t/seeker#demo">
+  <a href="https://github.com/mihafiz/seeker#demo">
     <img src="https://dabuttonfactory.com/button.png?t=DEMO&f=Open+Sans&ts=15&tc=000&hp=25&vp=10&c=5&bgt=unicolored&bgc=00e2ff">
   </a>
 </p>
 
-Concept behind Seeker is simple, just like we host phishing pages to get credentials why not host a fake page that requests your location like many popular location based websites. Read more on <a href="https://thewhiteh4t.github.io"> thewhiteh4t's Blog </a>.Seeker Hosts a fake website which asks for Location Permission and if the target allows it, we can get :
+Concept behind Seeker is simple, just like we host phishing pages to get credentials why not host a fake page that requests your location like many popular location based websites. Seeker Hosts a fake website which asks for Location Permission and if the target allows it, we can get :
 
 * Longitude
 * Latitude
@@ -97,7 +82,7 @@ Available Templates :
 ### Kali Linux / Ubuntu / Parrot OS
 
 ```bash
-git clone https://github.com/thewhiteh4t/seeker.git
+git clone https://github.com/mihafiz/seeker.git
 cd seeker/
 apt update
 apt install python3 python3-pip php
@@ -113,7 +98,7 @@ pacman -S seeker
 ### Termux
 
 ```bash
-git clone https://github.com/thewhiteh4t/seeker.git
+git clone https://github.com/mihafiz/seeker.git
 cd seeker/
 pkg update
 pkg install python php
@@ -122,12 +107,12 @@ pip3 install requests
 ### Docker
 
 ```bash
-docker pull thewhiteh4t/seeker
+docker pull mihafiz/seeker
 ```
 
 ### OSX
 ```bash
-git clone https://github.com/thewhiteh4t/seeker.py
+git clone https://github.com/mihafiz/seeker.py
 cd seeker/
 python3 seeker.py
 ````
@@ -181,7 +166,7 @@ $ ./ngrok http 1337
 $ docker network create ngroknet
 
 # Step 2
-$ docker run --rm -it --net ngroknet --name seeker thewhiteh4t/seeker
+$ docker run --rm -it --net ngroknet --name seeker mihafiz/seeker
 
 # Step 3
 $ docker run --rm -it --net ngroknet --name ngrok wernight/ngrok ngrok http seeker:8080
